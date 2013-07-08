@@ -5,6 +5,7 @@ requirejs.config({
         'backbone' : 'libraries/backbone/backbone-min',
         'backbone.babysitter' : 'libraries/marionette/backbone.babysitter',
         'backbone.marionette' : 'libraries/marionette/backbone.marionette.min',
+        'backbone.relational' : 'libraries/relational/backbone.relational.min',
         'backbone.wreqr' : 'libraries/marionette/backbone.wreqr',
         'bootstrap' : '/libraries/bootstrap/js/bootstrap.min',
         'jQuery' : 'libraries/jquery/jquery-2.0.2.min',
@@ -26,6 +27,9 @@ requirejs.config({
                     'json',
                     'jQuery',
                     'underscore' ]
+        },
+        'backbone.relational' : {
+            deps : [ 'backbone' ]
         },
         'backbone.wreqr' : {
             deps : [ 'backbone' ]
